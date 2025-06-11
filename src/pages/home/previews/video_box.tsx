@@ -54,6 +54,12 @@ export const players: { icon: string; name: string; scheme: string }[] = [
     scheme:
       "intent:$durl#Intent;package=com.mxtech.videoplayer.pro;S.title=$name;end",
   },
+  {
+    icon: "iPlay",
+    name: "iPlay",
+    scheme: "iplay://play/any?type=url&url=$bdurl",
+  },
+  { icon: "mpv", name: "mpv", scheme: "mpv://$edurl" },
 ]
 
 export const AutoHeightPlugin = (player: Artplayer) => {
